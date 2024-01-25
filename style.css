@@ -1,0 +1,141 @@
+@font-face {
+  font-family: gilroy;
+  src: url("Font/Gilroy-Light.otf");
+}
+@font-face {
+  font-family: kajiro;
+  src: url("Font/Kajiro\ Bold.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "gilroy";
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  width: 100%;
+  position: absloute;
+  height: 100vh;
+}
+#back {
+  width: 100%;
+  height: 100vh;
+}
+#back img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+#top {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+#workingarea {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  height: 100vh;
+  max-width: 1920px;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 40px 0;
+}
+#nav img {
+  height: 60px;
+}
+#nleft,
+#nright {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+#nav a {
+  pointer-events: all;
+  font-size: 16px;
+  text-decoration: none;
+  font-family: "gilroy";
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+#hero {
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  top: 50%;
+  left: 0;
+  transform: translate(0%, -50%);
+  width: 100%;
+}
+
+#heroleft #elem {
+  position: relative;
+  height: 9vw;
+  overflow: hidden;
+}
+#heroleft #elem h1 {
+  position: absolute;
+  color: #fff;
+  top: 100%;
+  left: 0;
+  font-family: "kajiro";
+  line-height: 0.9;
+  font-weight: 100;
+  font-size: 11vw;
+}
+#heroleft #elem h1:nth-child(1) {
+  top: 0;
+}
+#hero #heroleft {
+  min-width: 50%;
+}
+#hero #heroleft button {
+  pointer-events: all;
+  border: none;
+  letter-spacing: 4px;
+  cursor: pointer;
+  padding: 0.8vw 3vw;
+  font-size: 3vw;
+  margin-top: 1vw;
+  font-family: "kajiro";
+}
+#hero #heroright {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 25%;
+  color: #fff;
+  /* background-color: rgb(130, 174, 64); */
+}
+
+#heroright p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: right;
+}
+
+#heroright #imagediv {
+  border: none;
+  border-radius: 10px;
+  width: 85%;
+  margin-bottom: 30px;
+  height: 150px;
+  background-image: url("broken_4k-3840x2160.jpg");
+  background-size: cover;
+  background-position: center;
+}
